@@ -9,7 +9,7 @@ app.use("/assets", express.static(__dirname + "/public"));
 //mongo instead of localhost for docker-compose
 mongoose.connect(
   //  This is our mongo db address
-  "mongodb://172.25.0.61:27017/users",
+  "mongodb://localhost:27017/users",
   { useNewUrlParser: true, useUnifiedTopology: true },
   err => {
     console.log(err);
