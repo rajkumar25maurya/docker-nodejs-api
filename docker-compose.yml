@@ -2,9 +2,9 @@ version: "2.1"
 
 services:
   app:
-    build: .
+    build: . # it will build the docker image using corrent directory with docker file
     ports:
-      - 3001:3000
+      - 3001:3000 ## and start container with 3001 prot
   mongo:
     image: mongo
     ports:

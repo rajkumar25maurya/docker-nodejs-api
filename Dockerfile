@@ -1,5 +1,5 @@
 FROM node:10.13-alpine
-RUN apt-get install telnet curl -y
+RUN apk update -y
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
